@@ -29,7 +29,7 @@
   (let [new-game-info (update-game-info game-info)]
     (if (quit? new-game-info)
       (print-field new-game-info)
-      (game-main new-game-info))))
+      (recur new-game-info))))
 
 (defn greet [word]
   (println word))
