@@ -15,6 +15,11 @@
     "
     false))
 
+(defn alive? [life]
+    (if (= life \*)
+        true
+        false))
+
 (defn print-field [{f :field}]
   (println f))
 
